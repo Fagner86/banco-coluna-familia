@@ -16,7 +16,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/data', formData);
+      const response = await axios.post('https://banco-coluna-familia-server.onrender.com/data', formData);
       console.log('Data inserted:', response.data);
       // Limpa o formulário após a submissão
       setFormData({ column1: '', column2: '' });
